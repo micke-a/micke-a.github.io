@@ -1,0 +1,80 @@
+---
+layout: default
+title: Portfolio
+portfolio:
+  - image_path: /images/galleries/crabs/logo_flote_inv.png
+    category: SEO
+    text: Tesla
+    url: http://www.teslamotors.com/
+  - image_path: /images/galleries/crabs/logo_rens_inv.png
+    category: SEO
+    text: Optimizely
+    url: https://www.optimizely.com/
+  - image_path: /images/galleries/crabs/logo_scuba_inv.png
+    category: Content Writing
+    text: GitHub
+    url: https://github.com/
+  - image_path: /images/galleries/crabs/logo_sjo_inv.png
+    category: Web Design
+    text: Dropbox
+    url: https://www.dropbox.com
+  - image_path: /images/galleries/crabs/logo_snork_inv.png
+    category: Social Media Marketing
+    text: Uber
+    url: https://www.uber.com/
+---
+
+{% include JB/setup %}
+{% include galheader.html %}
+
+<div class="row no-gutter">
+  <section class="bg-dark">
+    <div class="text-center">
+      <h1>Portfolio</h1>
+    </div>
+  </section>
+</div>
+
+    <div class="row no-gutter">
+      <section class="no-padding" id="portfolio">
+
+      {% for item in page.portfolio %}
+      <div class="col-lg-4 col-sm-6">
+        <a href="{{ item.url }}" class="portfolio-box">
+          <a href="{{ item.image_path}}" data-lightbox="portfolio" title="{{ image.text }}">
+            <img src="{{ item.image_path }}" class="thumbnail" width="150 px" height="150px" />
+          </a>
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                {{ item.category }}
+              </div>
+              <div class="project-name">
+                {{ item.project }}
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <table class="table table-condensed">
+          <tbody>
+            <tr>
+              <td class="active">key</td>
+              <td>value</td>
+            </tr>
+            <tr>
+              <td class="active">key</td>
+              <td>value</td>
+            </tr>
+            <tr>
+              <td class="active">key</td>
+              <td>value</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      {% endfor %}
+    </section>
+
+    </div>

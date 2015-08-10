@@ -1,0 +1,42 @@
+
+<div id="carousel-example-generic" data-interval="3000" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  {% for slogan in site.data.slogans %}
+    {% if forloop.index0 == 0 %}
+      <li data-target="#carousel-example-generic" data-slide-to="{{foorloop.index}}" class="active"></li>
+    {% else %}
+      <li data-target="#carousel-example-generic" data-slide-to="{{foorloop.index}}"></li>
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+  {% for slogan in site.data.slogans %}
+    {% if forloop.index0 == 0 %}
+      <div class="item active">
+        <blockquote class="blockquote-reverse">
+          <p>"{{ slogan.text }}"</p>
+          <footer> <cite title="Source Title">{{ slogan.author }}</cite></footer>
+        </blockquote>
+      </div>
+    {% else %}
+      <div class="item">
+        <blockquote class="blockquote-reverse">
+          <p>"{{ slogan.text }}"</p>
+          <footer> <cite title="Source Title">{{ slogan.author }}</cite></footer>
+        </blockquote>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Controls
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  -->
+</div>

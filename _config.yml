@@ -12,9 +12,9 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Crabdivers
-tagline: Site Tagline
+tagline: Mask Or Nude
 author :
-  name : Mikael Andersson
+  name : Crabivers
   #email : blah@email.test
   #github : username
   #twitter : username
@@ -103,7 +103,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : 'UA-***'
+        tracking_id : 'UA-66152636-1'
     googleUA :
         tracking_id : 'UA-***'
         property_name : 'PROPERTY NAME'
