@@ -2,7 +2,7 @@
 layout: page
 title : Galleries
 header : Galleries Header
-group: navigation
+#group: navigation
 ---
 {% include JB/setup %}
 
