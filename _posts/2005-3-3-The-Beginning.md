@@ -1,6 +1,6 @@
 ---
 layout: post
-tagline: The start of something beautiful!
+excerpt: The start of something beautiful!
 ---
 {% include JB/setup %}
 

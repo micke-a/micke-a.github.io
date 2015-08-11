@@ -1,6 +1,6 @@
 ---
 layout: post
-tagline: The first new reqruites
+excerpt: The first new reqruites
 ---
 {% include JB/setup %}
 
