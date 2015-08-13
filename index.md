@@ -13,5 +13,5 @@ tagline: Supporting tagline
 {% for post in site.posts %}
 <h2> {{ post.title }} </h2>
 <p> {{ post.excerpt }} </p>
-<p><a class="btn btn-primary" href="{{ post.url }}" role="button">Continue reading &raquo;</a></p>
+<p><a class="btn btn-default" href="{{ post.url }}" role="button">Continue reading &raquo;</a></p>
 {% endfor %}
